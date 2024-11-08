@@ -76,8 +76,8 @@ Follow the installation instructions on the lbptools.py GitHub page to install a
 To ensure all required submodules are included, use the following:
 
 ```
-git clone https://github.com/YourUsername/PSDiscordBot2.git --recurse-submodules
-cd PSDiscordBot2
+git clone https://github.com/Zhaxxy/eZwizard3-bot.git --recurse-submodules
+cd eZwizard3-bot
 git submodule update --init --recursive
 ```
 
@@ -85,17 +85,18 @@ git submodule update --init --recursive
 <a name="configure-google-cloud-api"></a>
 The bot uses Google Drive for storage of large save files. Follow these steps to set up your Google Cloud project and configure it for Drive API access:
 
-Go to Google Cloud Console.
+#### Go to Google Cloud Console.
 Create a new project (or select an existing one).
 In the API Library, search for and enable the Google Drive API.
-Set up OAuth 2.0 credentials:
+
+#### Set up OAuth 2.0 credentials:
 Go to Credentials and click Create Credentials > OAuth client ID.
 Configure the consent screen and download the credentials.json file.
 Place credentials.json in the project directory (PSDiscordBot2/credentials.json).
 
 ## 4. Configure the Bot
 <a name="configure-the-bot"></a>
-Open the config.json file and update the following fields:
+Open the config.yaml file and update the following fields:
 
 Google Cloud API user ID: Confirm your Google API credentials.
 Discord API Token: Obtain a token from the Discord Developer Portal.
